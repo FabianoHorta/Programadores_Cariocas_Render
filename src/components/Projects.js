@@ -10,12 +10,11 @@ import projImg7 from "../assets/img/7.png";
 import projImg8 from "../assets/img/8.png";
 import projImg9 from "../assets/img/9.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 import pdf from "../assets/pdf/classificacao.pdf";
 
 export const Projects = () => {
-
   const galeria = [
     {
       title: "Programadores Cariocas",
@@ -64,9 +63,8 @@ export const Projects = () => {
       title: "Programadores Cariocas",
       description: "Resilia",
       imgUrl: projImg9,
-    }
+    },
   ];
-  
 
   return (
     <section className="project" id="project">
@@ -74,13 +72,24 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
                   <h2>Programadores Cariocas</h2>
-                  <p>O Programadores Cariocas faz parte de um grande ecossistema de iniciativas conectadas, que têm o objetivo de tornar 
-                    Rio a capital da inovação e tecnologia. </p>
+                  <p>
+                    Os programadores cariocas fazem parte de um grande
+                    ecossistema de iniciativas conectadas, que visam tornar o
+                    Rio de Janeiro uma capital de inovação e tecnologia.
+                  </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                    <Nav
+                      variant="pills"
+                      className="nav-pills mb-5 justify-content-center align-items-center"
+                      id="pills-tab"
+                    >
                       <Nav.Item>
                         <Nav.Link eventKey="first">Galeria</Nav.Link>
                       </Nav.Item>
@@ -88,56 +97,61 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Classificação</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Empresas Parceiras </Nav.Link>
+                        <Nav.Link eventKey="third">
+                          Empresas Parceiras{" "}
+                        </Nav.Link>
                       </Nav.Item>
                     </Nav>
-                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                    <Tab.Content
+                      id="slideInUp"
+                      className={
+                        isVisible ? "animate__animated animate__slideInUp" : ""
+                      }
+                    >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {
-                            galeria.map((galeria, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...galeria}
-                                />
-                              )
-                            })
-                          }
+                          {galeria.map((galeria, index) => {
+                            return <ProjectCard key={index} {...galeria} />;
+                          })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
-                        <p>Evento de formatura das primeiras turmas do Programadores Cariocas.</p>
+                        <p>
+                          Evento de formatura das primeiras turmas do
+                          Programadores Cariocas.
+                        </p>
                       </Tab.Pane>
                       <Tab.Pane className="text-center" eventKey="second">
-
-                        <a href="https://programadorescariocas.rio/wp-content/uploads/sites/8/2022/07/EDITAL_PROGRAMADORES.pdf"><button type="button" class="btn btn-primary btn-lg botao-edital">Edital</button></a>
-                        <a href={pdf}><button type="button" class="btn btn-primary btn-lg">Classificação</button></a>
-
+                        <a href="https://programadorescariocas.rio/wp-content/uploads/sites/8/2022/07/EDITAL_PROGRAMADORES.pdf">
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-lg botao-edital"
+                          >
+                            Edital
+                          </button>
+                        </a>
+                        <a href={pdf}>
+                          <button type="button" class="btn btn-primary btn-lg">
+                            Classificação
+                          </button>
+                        </a>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
-                          {
-                            empresasParceiras.map((empresas, index) => {
-                              return (
-                                <ProjectCard
-                                  key={index}
-                                  {...empresas}
-                                />
-                              )
-                            })
-                          }
+                          {empresasParceiras.map((empresas, index) => {
+                            return <ProjectCard key={index} {...empresas} />;
+                          })}
                         </Row>
-                      
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
-                </div>}
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
-  )
-}
+  );
+};
