@@ -1,19 +1,19 @@
 /************ Custom Font ************/
 @font-face {
   font-family: Centra;
-  src: url("./assets/font/CentraNo2-Bold.ttf");
+  src: url('./assets/font/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: Centra;
-  src: url("./assets/font/CentraNo2-Medium.ttf");
+  src: url('./assets/font/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: Centra;
-  src: url("./assets/font/CentraNo2-Book.ttf");
+  src: url('./assets/font/CentraNo2-Book.ttf');
   font-weight: 400;
 }
 
@@ -35,7 +35,7 @@ body {
   position: relative;
   background-color: #ffffff !important;
   color: #152f77 !important;
-  font-family: "Centra", sans-serif !important;
+  font-family: 'Centra', sans-serif !important;
 }
 
 h1,
@@ -80,18 +80,10 @@ select:focus {
   outline: none;
 }
 
-@media (min-width: 1700px) {
+@media (min-width:1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
-  }
-}
-
-@media (max-width: 500px) {
-  main .container {
-    max-width: 50%;
-    padding: 0 50px;
-    font-size: small;
   }
 }
 
@@ -117,6 +109,7 @@ nav.navbar {
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #ffffff8d;
+
 }
 
 nav.navbar a.navbar-brand {
@@ -182,8 +175,7 @@ span.navbar-text {
 }
 
 .social-icon a:hover img {
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
-    hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 .navbar-text button {
@@ -220,6 +212,7 @@ span.navbar-text {
   color: #fffdfd;
   background-color: rgb(43, 55, 115);
   border: none;
+
 }
 
 .navbar-text button:hover::before {
@@ -257,7 +250,7 @@ nav.navbar .navbar-toggler-icon:before {
   background-color: #000000;
   top: 0;
   left: 0;
-  content: "";
+  content: '';
   z-index: 2;
   transition: all 300ms linear;
 }
@@ -286,7 +279,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("./assets/img/banner-bg.png");
+  background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -297,11 +290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   padding: 8px 10px;
   color: #fff;
-  background: linear-gradient(
-    90.21deg,
-    rgb(76, 183, 255) -5.91%,
-    rgb(43, 55, 115) 111.58%
-  );
+  background: linear-gradient(90.21deg, rgb(76, 183, 255) -5.91%, rgb(43, 55, 115) 111.58%);
   border: 1px solid rgba(28, 5, 131, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -364,7 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-.txt-rotate > .wrap {
+.txt-rotate>.wrap {
   border-right: 0.08em solid #666;
 }
 
@@ -372,11 +361,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background-image: url("./assets/img/meio-bg.png");
+  background-image: url('./assets/img/meio-bg.png');
+  ;
 }
 
 .skill-bx {
-  background: rgb(39, 50, 106);
+  background: rgb(39,50,106);
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -386,7 +376,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h2 {
   font-size: 45px;
   font-weight: 700;
-  color: #ffffff;
+color: #ffffff;
 }
 
 .skill p {
@@ -429,6 +419,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   text-align: center;
   color: rgb(9, 46, 133);
+
 }
 
 .project p {
@@ -473,11 +464,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(
-    90.21deg,
-    rgb(76, 183, 255) -5.91%,
-    rgb(43, 55, 115) 111.58%
-  );
+  background: linear-gradient(90.21deg, rgb(76, 183, 255) -5.91%,
+      rgb(43, 55, 115) 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -520,11 +508,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(
-    90.21deg,
-    rgb(76, 183, 255) -5.91%,
-    rgb(43, 55, 115) 111.58%
-  );
+  background: linear-gradient(90.21deg, rgb(76, 183, 255) -5.91%,
+      rgb(43, 55, 115) 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -546,6 +531,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
   color: white;
+
 }
 
 .proj-imgbx:hover .proj-txtx {
@@ -667,14 +653,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url("./assets/img/footer-bg.png");
+  background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .newsletter-bx {
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 55px;
   color: #121212;
   padding: 85px 125px;
@@ -700,7 +686,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -732,7 +718,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;
@@ -747,18 +733,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #b8b8b8;
+  color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
 
-/*Nicolas - 02/03 - Adicionei o text-align*/
-
-#connect {
+#connect{
   color: white;
-  text-align: justify;
-}
-
-#text-banner {
-  text-align: justify;
 }
