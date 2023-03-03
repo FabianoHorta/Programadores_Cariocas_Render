@@ -25,7 +25,7 @@ export const Banner = () => {
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    let updatedText = isDeleting ? fullText.substring(0, text.length + 1) : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
 
@@ -57,7 +57,7 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Seja Bem-Vindo!</span>
                   <h1>{``} <span className="txt-rotate" dataPeriod="7000" data-rotate='[ "PROGRAMADORES CARIOCAS" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>É uma Iniciativa de política pública da Prefeitura da Cidade do Rio de Janeiro, que está sendo lançada pela Secretaria de Desenvolvimento Econômico, Inovação e Simplificação (SMDEIS), batizada de Programadores Cariocas. O projeto é realizado junto a instituições previamente selecionadas, é destinada a refugiados e egressos da rede pública com ensino médio completo, com prioridade para negros, mulheres e trans. A meta é formar cinco mil profissionais até 2024.
+                  <p id="text-review">É uma iniciativa de política pública da Prefeitura da cidade do Rio de Janeiro, que foi lançada pela Secretaria de Desenvolvimento Econômico, Inovação e Simplificação (SMDEIS), batizada de Programadores Cariocas. O projeto é realizado junto a instituições previamente selecionadas, destinada a refugiados e egressos da rede pública com ensino médio completo, com prioridade para negros, mulheres e trans. A meta é formar cinco mil profissionais até 2024.
 </p>
                 </div>}
             </TrackVisibility>

@@ -35,8 +35,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Aprendizagem</h2>
-                        <p>Durante 6 meses, os alunos desenvolverão as habilidades de Front-end, Softskills e Back-end,<br></br>Dando oportunidades aos alunos os melhores
-                        métodos de apredizagem e sobre o mercado de trabalho.</p>
+                        <p>Ao longo de 6 meses, os alunos desenvolverão Front-end, Soft skills e Back-end. Sendo assim, terão a oportunidade de ter aulas com profissionais qualificados que utilizarão melhores métodos de aprendizagem e compreensão da necessidade do mercado de trabalho.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
@@ -44,7 +43,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Softskills</h5>
+                                <h5>Soft Skills</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />

@@ -67,14 +67,12 @@ export const Contact = () => {
                     Durante esse período nossos alunos contarão com uma ajuda financeira de R$ 500,00 para manter a sua permanência no projeto.
                   </p>
                   <br/>
-                  <h2>Achou bom? Ainda tem mais!</h2>
-                  <p id="connect">Após a conclusão e aprovação de todos os módulos cursados, os nossos alunos receberão o certificado de Desenvolvedor Web Full Stack
-                    e 1 notebook.</p>
-                    <p>Muito bom não é mesmo?
+                  <h2 id="font-good">Achou bom? Ainda tem mais!</h2>
+                  <p id="connect">Após a conclusão e aprovação de todos os módulos de aprendizagem, nossos alunos recebem o Certificado Full Stack Web Developer e um notebook.</p>
+                    <p>Muito bom, não é mesmo?
                       <br/>
                       <br/>
-                       Não perca tempo e inscreva-se nesse projeto que irá mudar a sua vida e transformar o Rio de Janeiro
-                      na capital da inovação e tecnologia do Brasil!</p>
+                       Não perca tempo e inscreva-se neste programa que vai mudar a sua vida e transformar o Rio de Janeiro na capital da inovação e tecnologia do Brasil!</p>
                 </div>}
             </TrackVisibility>
           </Col>
