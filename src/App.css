@@ -439,6 +439,7 @@ color: #ffffff;
   border-radius: 50px;
   background-color: rgb(6, 47, 93);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .project .nav.nav-pills .nav-item {
