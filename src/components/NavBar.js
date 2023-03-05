@@ -84,17 +84,17 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/company/smdeis-rio/">
+                <a href="https://www.linkedin.com/company/smdeis-rio/" target="_blank">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="https://www.facebook.com/smdeis.rio/">
+                <a href="https://www.facebook.com/smdeis.rio/" target="_blank">
                   <img src={navIcon2} alt="" />
                 </a>
-                <a href="https://www.instagram.com/smdeis.rio/">
+                <a href="https://www.instagram.com/smdeis.rio/" target="_blank">
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScGlZB1cWunQS2Ck9gQuFmNAbefCHBx5D4IC0ci3KaAlMYHHg/viewform">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScGlZB1cWunQS2Ck9gQuFmNAbefCHBx5D4IC0ci3KaAlMYHHg/viewform" target="_blank">
                 <button className="vvd">
                   <span>Inscreva-se</span>
                 </button>
