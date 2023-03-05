@@ -110,8 +110,8 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane className="text-center" eventKey="second">
 
-                        <a href="https://programadorescariocas.rio/wp-content/uploads/sites/8/2022/07/EDITAL_PROGRAMADORES.pdf"><button type="button" class="btn btn-primary btn-lg botao-edital">Edital</button></a>
-                        <a href={pdf}><button type="button" class="btn btn-primary btn-lg">Classificação</button></a>
+                        <a href="https://programadorescariocas.rio/wp-content/uploads/sites/8/2022/07/EDITAL_PROGRAMADORES.pdf" target="_blank"><button type="button" class="btn btn-primary btn-lg botao-edital">Edital</button></a>
+                        <a href={pdf} target="_blank"><button type="button" class="btn btn-primary btn-lg">Classificação</button></a>
 
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
