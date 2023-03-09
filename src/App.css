@@ -753,4 +753,12 @@ color: #ffffff;
 }
 #font-good{
   font-size: 30px;
+  color: white;
+}
+#equipe{
+  font-weight: 400;
+  color: rgb(43, 55, 115) !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
 }

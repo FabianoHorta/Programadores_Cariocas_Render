@@ -4,7 +4,6 @@ import logo from "../assets/img/logo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
-import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
@@ -51,7 +50,7 @@ export const NavBar = () => {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="#skills"
+                href="#aprendizagem"
                 className={
                   activeLink === "skills" ? "active navbar-link" : "navbar-link"
                 }
@@ -60,7 +59,7 @@ export const NavBar = () => {
                 Aprendizagem
               </Nav.Link>
               <Nav.Link
-                href="#project"
+                href="#projeto"
                 className={
                   activeLink === "project"
                     ? "active navbar-link"
@@ -71,9 +70,9 @@ export const NavBar = () => {
                 Projeto
               </Nav.Link>
               <Nav.Link
-                href="#connect"
+                href="#sobre"
                 className={
-                  activeLink === "connect"
+                  activeLink === "sobre"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
@@ -81,7 +80,13 @@ export const NavBar = () => {
               >
                 Sobre
               </Nav.Link>
+              
             </Nav>
+            <a href="https://render.com" target="_blank">
+                <button className="vvd">
+                  <span id="equipe" >Equipe</span>
+                </button>
+              </a>
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/company/smdeis-rio/" target="_blank">

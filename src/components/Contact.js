@@ -5,48 +5,9 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
-  const formInitialDetails = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    password: ''
-  }
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Enviar');
-  const [status, setStatus] = useState({});
-
-  const onFormUpdate = (category, value) => {
-    setFormDetails({
-      ...formDetails,
-      [category]: value
-    })
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Enviado");
-    let response = await fetch("http://localhost:3001/adduser", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-        "access-control-allow-origin" : "*"
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Enviar");
-    console.log(formDetails)
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully' });
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.' });
-    }
-  };
-
+ 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="sobre">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
@@ -69,7 +30,7 @@ export const Contact = () => {
                   <br/>
                   <h2 id="font-good">Achou bom? Ainda tem mais!</h2>
                   <p id="connect">Após a conclusão e aprovação de todos os módulos de aprendizagem, nossos alunos recebem o Certificado Full Stack Web Developer e um notebook.</p>
-                    <p>Muito bom, não é mesmo?
+                    <p id="connect">Muito bom, não é mesmo?
                       <br/>
                       <br/>
                        Não perca tempo e inscreva-se neste programa que vai mudar a sua vida e transformar o Rio de Janeiro na capital da inovação e tecnologia do Brasil!</p>
