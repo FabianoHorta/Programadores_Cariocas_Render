@@ -82,7 +82,7 @@ export const NavBar = () => {
               </Nav.Link>
               
             </Nav>
-            <a href="https://render.com" target="_blank">
+            <a href="https://bit.ly/bangudevs" target="_blank">
                 <button className="vvd">
                   <span id="equipe" >Equipe</span>
                 </button>
